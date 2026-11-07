@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>1-Year Medical Exam Plan — Dr. Hassan</title>
+<script src="https://hassanakhter079.github.io/After-Salah-Zikr/cloud-sync.js" data-app="study-plan-1year"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#0A1628;--ink2:#1E3A5F;--teal:#0D9488;--teal-dim:#0F766E;--teal-pale:#CCFBF1;--amber:#B45309;--amber-pale:#FEF3C7;--rose:#BE123C;--rose-pale:#FFF1F2;--slate:#64748B;--border:#E2E8F0;--bg:#F8FAFC;--white:#FFFFFF;--card:#FFFFFF;}
@@ -698,6 +699,12 @@ function loadColData(){
 
 // ── Init ───────────────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded',function(){
+  loadColData();
+  loadChkData();
+  bindTrackerInputs();
+  upd();
+});
+window.addEventListener('cloud-sync-applied',function(){
   loadColData();
   loadChkData();
   bindTrackerInputs();
